@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/gpio_out_title"
+            android:textSize="40sp"/>
+
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_out_0"
+            style="@style/gpio_button_style"
+            android:text="@string/gpio_out_0_text"
+            />
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_out_1"
+            style="@style/gpio_button_style"
+            android:text="@string/gpio_out_1_text"
+            />
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_out_2"
+            style="@style/gpio_button_style"
+            android:text="@string/gpio_out_2_text"
+            />
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_out_3"
+            style="@style/gpio_button_style"
+            android:layout_marginBottom="20dp"
+            android:text="@string/gpio_out_3_text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/gpio_in_title"
+            android:textSize="40sp"/>
+
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_in_0"
+            style="@style/gpio_button_style"
+            android:text="@string/gpio_in_0_text"
+            />
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_in_1"
+            style="@style/gpio_button_style"
+            android:text="@string/gpio_in_1_text"
+            />
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_in_2"
+            style="@style/gpio_button_style"
+            android:text="@string/gpio_in_2_text"
+            />
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/gpio_in_3"
+            style="@style/gpio_button_style"
+            android:layout_marginBottom="20dp"
+            android:text="@string/gpio_in_3_text"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

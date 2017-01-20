@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:keepScreenOn="true"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutOutgoing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/TextViewOutgoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sent_bytes"
+            android:textSize="24sp" />
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/TextViewOutgoingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/init_data"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutReceived"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/TextViewIncoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/received_back"
+            android:textSize="24sp" />
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/TextViewIncomingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="@string/init_data"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/textViewLost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lost_bytes"
+            android:textSize="24sp" />
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/textViewLostValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="@string/init_data"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCorrupted"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/textViewCorrupted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/corruptsp" />
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/textViewCorruptedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="@string/init_data"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:flatui="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:keepScreenOn="true"
+              android:orientation="vertical">
+
+    <com.aplex.aplextest.flatui.view.FlatEditText
+        android:inputType="textMultiLine"
+        android:id="@+id/EditTextReception"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Reception"
+        android:isScrollContainer="true"
+        android:scrollbarStyle="insideOverlay"
+        flatui:fl_fieldStyle="fl_box">
+    </com.aplex.aplextest.flatui.view.FlatEditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+    <com.aplex.aplextest.flatui.view.FlatEditText
+         android:inputType="textMultiLine"
+        android:id="@+id/EditTextEmission"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="Emission"
+        android:lines="1"
+        flatui:fl_fieldStyle="fl_box">
+    </com.aplex.aplextest.flatui.view.FlatEditText>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+            <com.aplex.aplextest.flatui.view.FlatButton
+                android:layout_margin="10dp"
+                android:id="@+id/Emission_btn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/send"
+                android:lines="1"
+                flatui:fl_fieldStyle="fl_box">
+            </com.aplex.aplextest.flatui.view.FlatButton>
+
+            <com.aplex.aplextest.flatui.view.FlatButton
+                android:layout_margin="10dp"
+                android:id="@+id/send_auto"
+                android:text="@string/send_auto"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:lines="1"
+                flatui:fl_fieldStyle="fl_box">
+            </com.aplex.aplextest.flatui.view.FlatButton>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
