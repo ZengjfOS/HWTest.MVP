@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.aplex.aplextest.flatui.view.FlatTextView
+        android:id="@+id/setup_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto" />
+
+    <com.aplex.aplextest.flatui.view.FlatTextView
+        android:id="@+id/setup_small_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto" />
+
+</LinearLayout>

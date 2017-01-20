@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.aplex.aplextest.flatui.view.FlatTextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/Stress_test_title"
+        android:textSize="40sp"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.aplex.aplextest.flatui.view.ColorfulRingProgressView
+            android:id="@+id/crpv"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            flatui:bgColor="#e1e1e1"
+            flatui:fgColorEnd="#0e8b9e"
+            flatui:fgColorStart="#b9e4eb"
+            flatui:percent="0"
+            flatui:startAngle="0"
+            flatui:strokeWidth="21dp" />
+
+        <com.aplex.aplextest.flatui.view.FlatTextView
+            android:id="@+id/current_percent"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/percent"
+            android:textSize="25sp"
+            flatui:fl_fontExtension="ttf"
+            flatui:fl_fontFamily="roboto" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:layout_margin="10dp"
+            android:id="@+id/test_btn"
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:lines="1"
+            android:text="@string/start_test"
+            android:textSize="28sp"
+            flatui:fl_fieldStyle="fl_box" />
+        
+        
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:layout_margin="10dp"
+            android:id="@+id/detail_btn"
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:lines="1"
+            android:text="@string/test_detail"
+            android:textSize="28sp"
+            flatui:fl_fieldStyle="fl_box" />
+    </LinearLayout>
+
+</LinearLayout>

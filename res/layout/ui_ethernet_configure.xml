@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.aplex.aplextest.flatui.view.FlatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnCheck"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/ethernet_info"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto" />
+
+    <com.aplex.aplextest.flatui.view.FlatButton
+        android:id="@+id/btnConfig"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/ethernet_config"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="@color/sky_primary"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

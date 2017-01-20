@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:flatui="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--第一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--fflatui:fl_borderWidth="2dp" 有边框-->
+            <!--flatui:fl_cornerRadius="5dp" 边角弧度-->
+            <!--flatui:fl_fontExtension="ttf" 字体拓展-->
+            <!--flatui:fl_fontFamily="roboto" roboto字体-->
+            <com.aplex.aplextest.flatui.view.FlatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/eprom_controller_title"
+                android:textSize="25sp"
+                flatui:fl_cornerRadius="5dp"
+                flatui:fl_fontExtension="ttf"
+                flatui:fl_fontFamily="roboto"
+                flatui:fl_theme="@array/sky"/>
+
+            <Spinner
+                android:id="@+id/themes_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.aplex.aplextest.flatui.view.FlatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/eprom_address_title"
+                android:textSize="25sp"
+                flatui:fl_cornerRadius="5dp"
+                flatui:fl_fontExtension="ttf"
+                flatui:fl_fontFamily="roboto"
+                flatui:fl_theme="@array/sky"/>
+
+            <com.aplex.aplextest.flatui.view.FlatEditText
+                android:id="@+id/address_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.aplex.aplextest.flatui.view.FlatTextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/eprom_address_offset_title"
+                android:textSize="25sp"
+                flatui:fl_cornerRadius="5dp"
+                flatui:fl_fontExtension="ttf"
+                flatui:fl_fontFamily="roboto"
+                flatui:fl_theme="@array/sky"/>
+
+            <com.aplex.aplextest.flatui.view.FlatEditText
+                android:inputType="textMultiLine"
+                android:id="@+id/address_offset_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--第二行-->
+     <!--<LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.aplex.aplextest.flatui.view.FlatEditText
+            android:id="@+id/write_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="5"
+            flatui:fl_fieldStyle="fl_box"/>
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+
+            android:id="@+id/write_message_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/btn_write"/>
+    </LinearLayout>
+-->
+    <!--第三行-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.aplex.aplextest.flatui.view.FlatEditText
+            android:inputType="textMultiLine"
+            android:id="@+id/read_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="5"
+            flatui:fl_fieldStyle="fl_box"/>
+
+        <com.aplex.aplextest.flatui.view.FlatButton
+            android:id="@+id/read_message_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/btn_read"/>
+    </LinearLayout>
+
+</LinearLayout>

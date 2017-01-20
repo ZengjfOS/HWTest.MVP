@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:flatui="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.aplex.aplextest.flatui.view.FlatTextView
+        android:textSize="50dp"
+        android:gravity="center"
+        android:id="@+id/serialporttool_opt"
+        android:textStyle="bold"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+</LinearLayout>
